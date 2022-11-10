@@ -16,7 +16,7 @@ public class MovieRatingRpc {
     }
 
     public WebMovieRatingResponse getRatingByUserId(String idUser) {
-        return restTemplate.getForObject("http://localhost:8083/movierating/rating/" + idUser, WebMovieRatingResponse.class);
+        return restTemplate.getForObject("http://movie-rating-service/movierating/rating/" + idUser, WebMovieRatingResponse.class);
     }
 
 }

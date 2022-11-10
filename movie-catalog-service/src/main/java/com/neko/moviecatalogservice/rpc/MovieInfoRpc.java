@@ -16,6 +16,6 @@ public class MovieInfoRpc {
     }
 
     public WebMovieInfoReponse getMovieInfoResponseById(String movieId) {
-        return restTemplate.getForObject("http://localhost:8082/movieinfo/find/" + movieId, WebMovieInfoReponse.class);
+        return restTemplate.getForObject("http://movie-info-service/movieinfo/find/" + movieId, WebMovieInfoReponse.class);
     }
 }
